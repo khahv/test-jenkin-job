@@ -10,7 +10,7 @@ pipeline {
   stages {
     stage('Hello stage') {
       steps {
-        echo 'Hello World from patching'
+        echo 'Hello World from patching ${params.BUILD_ENVIRONMENT}'
        }
     }
   }
